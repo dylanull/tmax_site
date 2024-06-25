@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCFI &mdash; TMAX</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/hover.css')}}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.css">
+    {% endblock %}
+</head>
+<body>
+{% block content %}
+<section class="hero is-fullheight">
+
+    {% block maintext %}
+    <!-- Hero content: will be in the middle -->
+
+    {% endblock %}
+  
+    <!-- Hero footer: will stick at the bottom -->
+    <div class="hero-foot">
+      <nav class="tabs is-boxed is-fullwidth">
+        <div class="container">
+          <ul>
+            <li><a href="/index">Home</a></li>
+            <li><a>CCF &#8644; TMAX</a></li>
+            <li><a>CCF &#8644; SRC</a></li>
+            <li><a>CCF &#8644; CIC</a></li>
+            <li><a href="/select-file">List Views</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+</section>
+  
+
+{% endblock %}
+</body>
+</html>
+
+<!-- 
+
+    <h1>tmax <-> ccf</h1>
+    <a href="/list-view" target="_blank">List View</a>
+    <br>
+
+    CCF &#8644; TMAX
+
+
+        <div class="tabs is-centered">
+        <ul>
+          <li><a>CCF &#8644; TMAX</a></li>
+          <li><a>CCF &#8644; SRC</a></li>
+          <li><a>CCF &#8644; CIC</a></li>
+          <li><a href="/select-file">List Views</a></li>
+        </ul>
+      </div>
+
+
+-->
